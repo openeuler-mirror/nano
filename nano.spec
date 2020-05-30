@@ -1,7 +1,7 @@
 Name:		nano
 Version:	4.9.3
 Release:	0
-Summary:	Nano is now part of Apache CouchDB
+Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
 Source0:	https://www.nano-editor.org/dist/latest/%{name}-%{version}.tar.xz
@@ -10,7 +10,7 @@ BuildRequires:	file-devel gettext-devel gcc git ncurses-devel sed texinfo groff
 Conflicts:	filesystem < 3
 
 %description
-Nano is now part of Apache CouchDB.
+Nano is a tiny GNU editor
 
 %package_help
 
