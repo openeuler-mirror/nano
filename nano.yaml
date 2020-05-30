@@ -1,4 +1,5 @@
-version_control: github
-src_repo: apache/nano
-tag_prefix: ^v
-seperator: .
+---
+version_control: git
+src_repo: git://git.savannah.gnu.org/nano.git
+tag_prefix: "^v"
+seperator: "."
