@@ -1,7 +1,7 @@
 Name:		nano
-Version:	4.5
-Release:	2
-Summary:	Nano is now part of Apache CouchDB
+Version:	4.9.3
+Release:	0
+Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
 Source0:	https://www.nano-editor.org/dist/latest/%{name}-%{version}.tar.xz
@@ -10,7 +10,7 @@ BuildRequires:	file-devel gettext-devel gcc git ncurses-devel sed texinfo groff
 Conflicts:	filesystem < 3
 
 %description
-Nano is now part of Apache CouchDB.
+Nano is a tiny GNU editor
 
 %package_help
 
@@ -57,6 +57,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Sat May 30 2020 SimpleUpdate Robot <tc@openeuler.org>
+- Update to version 4.9.3
+
 * Fri Jan 17 2020 Lei Zhang <ricky.z@huawei.com> - 4.5-2
 - Remove useless nanorc config file
 
