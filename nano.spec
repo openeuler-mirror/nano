@@ -1,10 +1,10 @@
 Name:		nano
 Version:	4.5
-Release:	2
+Release:	3
 Summary:	Nano is now part of Apache CouchDB
 License:	GPLv3+
 URL:		https://www.nano-editor.org
-Source0:	https://www.nano-editor.org/dist/latest/%{name}-%{version}.tar.xz
+Source0:	https://www.nano-editor.org/dist/v4/%{name}-%{version}.tar.xz
 
 BuildRequires:	file-devel gettext-devel gcc git ncurses-devel sed texinfo groff
 Conflicts:	filesystem < 3
@@ -57,6 +57,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Tue Sep 15 2020 baizhonggui <baizhonggui@huawei.com> - 4.5-3
+- Modify source0
+
 * Fri Jan 17 2020 Lei Zhang <ricky.z@huawei.com> - 4.5-2
 - Remove useless nanorc config file
 
