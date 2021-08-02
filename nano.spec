@@ -1,12 +1,12 @@
 Name:		nano
 Version:	4.9.3
-Release:	1
+Release:	2
 Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
 Source0:	https://www.nano-editor.org/dist/v4/%{name}-%{version}.tar.xz
 
-BuildRequires:	file-devel gettext-devel gcc git ncurses-devel sed texinfo groff
+BuildRequires:	file-devel gettext-devel gcc ncurses-devel sed texinfo groff
 Conflicts:	filesystem < 3
 
 %description
@@ -15,7 +15,7 @@ Nano is a tiny GNU editor
 %package_help
 
 %prep
-%autosetup -S git
+%autosetup -p1
 
 
 %build
@@ -57,6 +57,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Mon Aug 02 2021 chenyanpanHW <chenyanpan@huawei.com> - 4.9.3-2
+- DESC: delete -S git from %autosetup, and delete BuildRequires git
+
 * Thu Sep 10 2020 baizhonggui <baizhonggui@huawei.com> - 4.9.3-1
 - Modify source0
 
