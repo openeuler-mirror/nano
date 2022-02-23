@@ -1,6 +1,6 @@
 Name:		nano
-Version:	4.9.3
-Release:	2
+Version:	6.2
+Release:	1
 Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
@@ -57,6 +57,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Wed Feb 23 2022 misaka00251 <misaka00251@misakanet.cn> - 6.2-1
+- Update to version 6.2
+
 * Mon Aug 02 2021 chenyanpanHW <chenyanpan@huawei.com> - 4.9.3-2
 - DESC: delete -S git from %autosetup, and delete BuildRequires git
 
