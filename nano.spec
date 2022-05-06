@@ -1,6 +1,6 @@
 Name:		nano
 Version:	6.2
-Release:	1
+Release:	2
 Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
@@ -24,10 +24,6 @@ cd build
 %global _configure ../configure
 %configure
 %make_build
-
-sed -e 's/# set nowrap/set nowrap/' \
-    -e 's/^#.*set speller.*$/set speller "hunspell"/' \
-    -e 's|^# \(include "/usr/share/nano/\*.nanorc"\)|\1|' \
 
 %install
 cd build
@@ -57,6 +53,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Fri May 06 2022 misaka00251 <misaka00251@misakanet.cn> - 6.2-2
+- Delete incomplete stuff
+
 * Wed Feb 23 2022 misaka00251 <misaka00251@misakanet.cn> - 6.2-1
 - Update to version 6.2
 
