@@ -1,10 +1,10 @@
 Name:		nano
-Version:	6.2
-Release:	2
+Version:	6.3
+Release:	1
 Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
 URL:		https://www.nano-editor.org
-Source0:	https://www.nano-editor.org/dist/v4/%{name}-%{version}.tar.xz
+Source0:	https://www.nano-editor.org/dist/v6/%{name}-%{version}.tar.xz
 
 BuildRequires:	file-devel gettext-devel gcc ncurses-devel sed texinfo groff
 Conflicts:	filesystem < 3
@@ -53,6 +53,10 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Sun Jun 12 2022 YukariChiba <i@0x7f.cc> - 6.3-1
+- Upgrade version to 6.3
+- Fix source url
+
 * Fri May 06 2022 misaka00251 <misaka00251@misakanet.cn> - 6.2-2
 - Delete incomplete stuff
 
