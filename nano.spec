@@ -1,5 +1,5 @@
 Name:		nano
-Version:	6.3
+Version:	6.4
 Release:	1
 Summary:	Nano is a tiny GNU editor
 License:	GPLv3+
@@ -53,6 +53,9 @@ install -d %{buildroot}%{_sysconfdir}
 %{_defaultdocdir}/nano/faq.html
 
 %changelog
+* Wed Aug 31 2022 hkgy <kaguyahatu@outlook.com> - 6.4-1
+- Update to 6.4
+
 * Sun Jun 12 2022 YukariChiba <i@0x7f.cc> - 6.3-1
 - Upgrade version to 6.3
 - Fix source url
